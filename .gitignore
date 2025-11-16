@@ -1,7 +1,12 @@
+# Ignorar carpetas
 trade_mgmt/
 __pycache__/
 
-*candle_manager*.py
-*ibapi_utils*.py
-*streaming_data*.py
-*time_series_features*.py
+# Ignorar CSV
+*.csv
+
+# Ignorar estos .py específicos (en cualquier subcarpeta)
+**/*candle_manager*.py
+**/*ibapi_utils*.py
+**/*streaming_data*.py
+**/*time_series_features*.py

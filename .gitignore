@@ -1,11 +1,9 @@
-# Ignorar carpetas
-trade_mgmt/
 __pycache__/
 
-# Ignorar CSV
-*.csv
+# Hide files and folders due to policies with Sealiah Technologies
 
-# Ignorar estos .py específicos (en cualquier subcarpeta)
+trade_mgmt/ 
+
 **/*candle_manager*.py
 **/*ibapi_utils*.py
 **/*streaming_data*.py

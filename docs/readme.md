@@ -16,7 +16,8 @@ The original project was developed to **Sealiah Technologies**, a private compan
 
 ## RESUME
 
-A flexible and scalable WebSocket-based architecture capable of ingesting, processing, and serving market data in real time.  
+A flexible and scalable WebSocket-based architecture capable of ingesting, processing, and serving market data in real time.
+
 Both backend and frontend layers are intentionally modular, allowing the server to adapt to various market data providers, dashboard frameworks, and real-time analytical use cases
 
 This enables the solution to scale according to customer requirements, technical constraints, or the nature of the market data provider.

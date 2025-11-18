@@ -10,7 +10,7 @@ Template for a WebSocket server designed to stream real-time market data from **
 
 This is a **demo version** and certain files or logic were intentionally excluded due to confidentiality agreements.
 
-The original project was developed to **Sealiah Technologies**, a private company of Algorithmic Trading.
+The original project was developed to a private company of Algorithmic Trading.
 
 ---
 

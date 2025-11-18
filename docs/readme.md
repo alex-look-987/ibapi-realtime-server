@@ -18,9 +18,9 @@ The original project was developed to **Sealiah Technologies**, a private compan
 
 A flexible and scalable WebSocket-based architecture capable of ingesting, processing, and serving market data in real time.
 
-Both backend and frontend layers are intentionally modular, allowing the server to adapt to various market data providers, dashboard frameworks, and real-time analytical use cases
+Both backend and frontend layers are intentionally modular, allowing the server to adapt to various market data providers, dashboard frameworks, and real-time analytical use cases.
 
-This enables the solution to scale according to customer requirements, technical constraints, or the nature of the market data provider.
+This enables the solution to scale according to customer development.
 
 Suitable for different business or project requirements.
 
@@ -29,9 +29,9 @@ Suitable for different business or project requirements.
 ## FUNCIONALITY
 
 - Process SMA every new candle
-- Log System for wether trades or any type of market information
-- Multi Instruments (FX, Stocks, CMMDTY, etc.)
-- Multi Frame
+- Log System for any type of market information
+- Multi Instrument (FX, Stocks, CMMDTY, etc.)
+- Multi Time Frame
 
 ---
 

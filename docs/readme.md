@@ -4,6 +4,8 @@
 
 ## INTRODUCTION
 
+**Project developed in Python**
+
 Template for a WebSocket server designed to stream real-time market data from **Interactive Brokers (IBAPI)** for analytical or dashboard-oriented applications.
 
 This is a **demo version** and certain files or logic were intentionally excluded due to confidentiality agreements.
@@ -37,7 +39,6 @@ Suitable for different business or project requirements.
 
 ### Backend
 
-- Python
 - IBAPI
 - AsyncIO
 - WebSockets
@@ -47,7 +48,7 @@ Suitable for different business or project requirements.
 
 - Bokeh
 
-### Optional Integrations
+### Optional Integrations (ilustrative)
 
 - Polygon.io
 - Alpaca Markets
@@ -58,7 +59,7 @@ Suitable for different business or project requirements.
 - Streamlit
 - SQL
 
-> **NOTE:** Both backend and frontend can be replaced or extended depending on customer needs.
+> **NOTE:** Both backend and frontend can be replaced or extended depending on customer needs. Also programming languages.
 
 ---
 

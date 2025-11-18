@@ -25,13 +25,13 @@ agg_funcs = {
     'pct_change': lambda s, w: pd.Series(s).pct_change(w)}
 
 extractors_date = {
-        'hour':      lambda d: pd.Series(d).dt.hour,      # hora de 0 a 23
-        'minute':    lambda d: pd.Series(d).dt.minute,    # minuto: 0, 15, 30, 45
-        'dayofweek': lambda d: pd.Series(d).dt.dayofweek, # 0=Lunes, 6=Domingo
-        'month':     lambda d: pd.Series(d).dt.month,     # 1 a 12
-        'day':       lambda d: pd.Series(d).dt.day,       # día del mes
-        'week':      lambda d: pd.Series(d).dt.isocalendar().week.astype(int),  # semana ISO
-        'year':       lambda d: pd.Series(d).dt.year}       # día del mes
+        'hour':      lambda d: pd.Series(d).dt.hour,     
+        'minute':    lambda d: pd.Series(d).dt.minute,   
+        'dayofweek': lambda d: pd.Series(d).dt.dayofweek,
+        'month':     lambda d: pd.Series(d).dt.month,    
+        'day':       lambda d: pd.Series(d).dt.day,      
+        'week':      lambda d: pd.Series(d).dt.isocalendar().week.astype(int), 
+        'year':       lambda d: pd.Series(d).dt.year}      
 
 def computation(df: pd.DataFrame, functions_to_apply: dict, window: list, feature: list, class_: bool) -> pd.DataFrame:
     """

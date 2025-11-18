@@ -44,11 +44,7 @@ Suitable for different business or project requirements.
 - WebSockets
 - Pandas / NumPy
 
-### Frontend / Dashboards
-
-- Bokeh
-
-### Optional Integrations (ilustrative)
+### Optional Integrations (Examples)
 
 - Polygon.io
 - Alpaca Markets
@@ -56,6 +52,8 @@ Suitable for different business or project requirements.
 - Docker deployment
 - Cloud Server
 - Dash
+- Ploty
+- Bokeh
 - Streamlit
 - SQL
 

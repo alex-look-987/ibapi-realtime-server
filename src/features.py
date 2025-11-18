@@ -2,7 +2,7 @@ import asyncio
 import numpy as np
 import pandas as pd
 from miscs.columns import dates, funcs_delta, window_delta, feature_delta
-from technical_indicators.time_series_features import computation, date_feature, session
+from technical_indicators.features import computation, date_feature, session
 
 def features(df: pd.DataFrame): 
 

@@ -12,6 +12,8 @@ This is a **demo version** and certain files or logic were intentionally exclude
 
 The original project was developed to a private company of Algorithmic Trading.
 
+> **NOTE:** You can find a demo from a local serverl at example/server_system_demo.gif
+
 ---
 
 ## RESUME

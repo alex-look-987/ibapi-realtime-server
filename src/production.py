@@ -25,6 +25,11 @@ async def process_message(websocket, path: str, state: ServerManager, monitoring
 
             logging.info("\nSERVER RUNNING!\n")
 
+            df = await features_async(df)
+            cols = [col for col in df.columns if 'mean' in col]
+
+            logging.info(df.tail(25)[cols])
+
             await asyncio.sleep(1)
             state.end_event.set()
 
@@ -38,15 +43,24 @@ async def process_message(websocket, path: str, state: ServerManager, monitoring
         try:
             data = await recv_and_parse(websocket)
             df = await update_dataframe(state, data)
+        
+            last_index = df.index[-1] if pd.notna(df.index[-1]) else None
 
-            last_index = df.index[-1]
-
+            filter_nan = pd.notna(last_index)
             candle_state = state.current_candle is not None
             new_candle = last_index != state.current_candle
+
+            if filter_nan:
+                logging.info(df[['open', 'high', 'low', 'close']].iloc[[-1]])
             
             # NEW CANDLE INCOMING
-            if new_candle and candle_state:
-                logging.info(f"STRATEGY PROCESSING:{state.current_candle}")
+            if all([new_candle, candle_state, filter_nan]):
+                logging.info(f"new candle:{state.current_candle}")
+
+                df = await features_async(df)
+                cols = [col for col in df.columns if 'mean' in col]
+                logging.info(df.tail(25)[cols])
+
                 state.current_candle = last_index
     
             state.current_candle = last_index
